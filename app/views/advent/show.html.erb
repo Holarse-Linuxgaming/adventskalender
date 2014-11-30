@@ -1,2 +1,12 @@
-<h1>Advent#show</h1>
-<p>Find me in app/views/advent/show.html.erb</p>
+<%= form_tag("/participate", method: "post", role: "form") do %>
+  <div class="form-group">
+    <%= label_tag(:name, "Name") %>
+    <%= text_field_tag(:name) %>
+  </div>
+  <div class="form-group">
+    <%= label_tag(:email, "E-Mail") %>
+    <%= text_field_tag(:email) %>
+  </div>
+
+  <button type="submit" class="btn btn-default">Ich mach mit!</button>
+<% end %>

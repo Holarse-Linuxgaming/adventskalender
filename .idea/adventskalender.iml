@@ -186,7 +186,6 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.3, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.11, jruby-1.7.16.1-p392) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.2.5, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jdbc-sqlite3 (v3.8.7, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, jruby-1.7.16.1-p392) [gem]" level="application" />
@@ -198,10 +197,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.1.8, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.1.8, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.0, jruby-1.7.16.1-p392) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.1.2, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.19, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v4.0.5, jruby-1.7.16.1-p392) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.12.3, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v2.2.2, jruby-1.7.16.1-p392) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.1, jruby-1.7.16.1-p392) [gem]" level="application" />

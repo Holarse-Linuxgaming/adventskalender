@@ -21,15 +21,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="javascript:void(0);"><i class="fa fa-tree">Holarse / GTuxTV - Adventskalender 2014</i></a>
+        <%= link_to root_path, class: "navbar-brand" do %>
+          <i class="fa fa-tree">Holarse / GTuxTV - Adventskalender 2014</i>
+        <% end %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><p class="navbar-text">Einträge fürs heutige (<%= @entry.day %>.) Türchen <span class="badge"><%= @entry.comments.count %></span></p></li>
-          <li><button type="button" class="btn btn-danger navbar-btn">Mitmachen!</button></li>
-          <li><button type="button" class="btn btn-info navbar-btn" id="snow-btn"><i class="fa fa-umbrella">Schnee?</i></button></li>
+          <li><p class="navbar-text">Einträge fürs heutige (<%= todays_entry.day %>.) Türchen <span class="badge"><%= todays_entry.comments.count %></span></p></li>
+          <li><button type="button" class="btn btn-danger navbar-btn" id="btn-participate">Mitmachen!</button></li>
+          <li><button type="button" class="btn btn-info navbar-btn" id="btn-toggle-snow"><i class="fa fa-umbrella">Schnee?</i></button></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

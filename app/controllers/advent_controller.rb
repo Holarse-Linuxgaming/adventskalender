@@ -1,8 +1,12 @@
 class AdventController < ApplicationController
   def index
-    @entry = Entry.first #.where(day: DateTime.now.day)
   end
 
   def show
+    @comment = Comment.new(entry: todays_entry)
+  end
+
+  def save
+    Rails.logger.debug(params)
   end
 end
