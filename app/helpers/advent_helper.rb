@@ -1,0 +1,2 @@
+module AdventHelper
+end
