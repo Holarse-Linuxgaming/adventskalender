@@ -12,6 +12,10 @@ class AdventController < ApplicationController
     todays_entry.save!
   end
 
+  def games
+    
+  end
+  
   private
 
   def comment_params

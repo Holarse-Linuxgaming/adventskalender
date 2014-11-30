@@ -7,5 +7,9 @@ $(document).ready(function() {
     $("#btn-participate").click(function() {
        window.location = "participate";
     });
+  
+    $("#btn-games").click(function() {
+      window.location = "games";
+    });
 
 });
