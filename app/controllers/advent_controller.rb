@@ -7,6 +7,14 @@ class AdventController < ApplicationController
   end
 
   def save
-    Rails.logger.debug(params)
+    comment = Comment.new(comment_params)
+    todays_entry.comments << comment
+    todays_entry.save!
+  end
+
+  private
+
+  def comment_params
+    params.permit(:name, :email)
   end
 end

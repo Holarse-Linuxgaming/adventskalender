@@ -1,12 +1,56 @@
-<%= form_tag("/participate", method: "post", role: "form") do %>
-  <div class="form-group">
-    <%= label_tag(:name, "Name") %>
-    <%= text_field_tag(:name) %>
-  </div>
-  <div class="form-group">
-    <%= label_tag(:email, "E-Mail") %>
-    <%= text_field_tag(:email) %>
-  </div>
+<div class="page-header">
+  <h1>Für das Adventstürchen eintragen<small>Türchen Nr. <%= todays_entry.day %></small></h1>
+</div>
 
-  <button type="submit" class="btn btn-default">Ich mach mit!</button>
-<% end %>
+<p>
+  Hier könnt ihr Euch eintragen, um am Gewinnspiel für das heutige Adventstürchen teilzunehmen. Der Gewinner wird zufällig aus den
+  eingegangenen Eintragungen jeden Tag neu ausgelost. Eure Daten benötigen wir, um mit Euch im Falle, dass ihr gewinnt, in Kontakt treten zu können. Außerdem verkaufen wir den ganzen Kram an einen seriösen chinesischen E-Mail-Sammler und verziehen uns dann mit den Millionen auf die Bahamas. Oder wir löschen die Datenbank am 25. Dezember einfach.
+</p>
+
+<p>
+  Zu Gewinnen gibt es jeden Tag zwei Linux-Spiele, dass ihr mit Steam auslösen könnt. Welches ist geheim und soll die Spannung steigern :-). Die Spieleliste könnt ihr aber natürlich einsehen.
+</p>
+
+<p>
+  Um auf GTuxTV zu gewinnen, müsst ihr auf Youtube einen Kommentar hinterlassen. Um auf Holarse zu gewinnen, müsst ihr einfach nur das Formular füllen.
+</p>
+
+<p>
+  Viel Spaß und Glück wünschen Euch, <br />
+  <a href="https://www.holarse-linuxgaming.de">Holarse - Spielen unter Linux</a> und <a href="http://gtuxtv.blogspot.de/">GTuxTV</a>
+</p>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">Bei Holarse mitmachen</div>
+      <div class="panel-body">
+        <%= form_tag("/participate", method: "post", role: "form") do %>
+          <div class="form-group">
+            <%= label_tag(:name, "Name") %>
+            <%= text_field_tag(:name) %>
+          </div>
+          <div class="form-group">
+            <%= label_tag(:email, "E-Mail") %>
+            <%= text_field_tag(:email) %>
+          </div>
+
+          <button type="submit" class="btn btn-default">Ich mach mit!</button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">Bei GTuxTV mitmachen</div>
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="<%= todays_entry.url %>"></iframe>
+        </div>
+        Einfach einen Kommentar im Video hinterlegen
+      </div>
+    </div>
+
+  </div>
+</div>
+
