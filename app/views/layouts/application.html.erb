@@ -6,6 +6,7 @@
   <title>Adventskalender</title>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/darkly/bootstrap.min.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= favicon_link_tag "favicon.png" %>
 
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= csrf_meta_tags %>
@@ -29,8 +30,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-<!--          <li><p class="navbar-text">Einträge fürs heutige (<%= todays_entry.day %>.) Türchen <span class="badge"><%= todays_entry.comments.count %></span></p></li> -->
-<li><button type="button" class="btn btn-danger navbar-btn" id="btn-participate"><i class="fa fa-gift"></i>Mitmachen!</button></li>
+	  <li><button type="button" class="btn btn-danger navbar-btn" id="btn-participate"><i class="fa fa-gift"></i>Mitmachen!</button></li>
           <li><button type="button" class="btn btn-info navbar-btn" id="btn-toggle-snow"><i class="fa fa-umbrella">Schnee?</i></button></li>
           <li><button type="button" class="btn btn-warning navbar-btn" id="btn-games"><i class="fa fa-gamepad">Die Spiele</i></button></li>
         </ul>

@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
   private
 
   def todays_entry
-    Entry.where(day: DateTime.now.day).first
+    Rails.cache.fetch "entry-#{DateTime.now.day}", expires_in: 1.day do
+      Entry.where(day: DateTime.now.day).first
+    end
   end
 
   helper_method :todays_entry
