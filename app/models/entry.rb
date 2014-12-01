@@ -6,4 +6,18 @@ class Entry < ActiveRecord::Base
 
   has_many :comments
 
+  def url_holarse_link
+    embed_to_link(url_holarse)
+ end
+
+  def url_gtuxtv_link
+    embed_to_link(url_gtuxtv)
+  end
+
+  private
+
+  def embed_to_link(video)
+    video.gsub(/embed\//,"watch?v=")
+  end
+
 end

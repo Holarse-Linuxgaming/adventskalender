@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
 
   def todays_entry
-    Entry.first # .where(day: DateTime.now.day)
+    Entry.where(day: DateTime.now.day).first
   end
 
   helper_method :todays_entry
